@@ -1,0 +1,28 @@
+# Variables for use in other scripts
+Variable "vcenter_username"{
+    type = string
+    description = "Username for authenticating to vCenter."
+    default = ""
+    sensitive = true
+}
+
+Variable "vcenter_password"{
+    type = string
+    description = "Plaintext password for vCenter."
+    default = ""
+    sensitive = true
+}
+
+Variable "ssh_username"{
+    type = string
+    description = "SSH username"
+    default = ""
+    sensitive = true
+}
+
+Variable "ssh_password"{
+    type = string
+    description = "SSH password"
+    default = ""
+    sensitive = true
+}

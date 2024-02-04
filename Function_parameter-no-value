@@ -1,0 +1,13 @@
+# Example of a function with a parameter that doesn't require a value
+
+function Get-Time {
+  param(
+    [Parameter(Mandatory=$false)]
+    [switch]$Clock
+  )
+  if ($Clock) {
+    Get-Date
+  } else {
+    "What's the time Mr. Wolf?"
+  }
+}
